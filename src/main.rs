@@ -2,12 +2,13 @@ mod problem_1;
 mod problem_2;
 mod problem_3;
 mod problem_4;
+mod problem_5;
 
 use problem_1::Problem1;
 use problem_2::{Problem2, CubesCapacity};
 use problem_3::Problem3;
 use problem_4::Problem4;
-
+use problem_5::Problem5;
 
 
 
@@ -33,4 +34,8 @@ fn main() {
     let prob_4 = Problem4{input_path: "resources/puzzle_4".to_string()};
     println!("problem4: part1 = {}", prob_4.part_1());
     println!("problem4: part2 = {}", prob_4.part_2());
+
+    let prob_5 = Problem5{input_path: "resources/test".to_string()};
+    println!("problem5: part1 = {}", prob_5.part_1());
+    println!("problem5: part2 = {}", prob_5.part_2());
 }
